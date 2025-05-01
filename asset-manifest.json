@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iAMi/static/css/main.e7745097.css",
-    "main.js": "/iAMi/static/js/main.c6d56860.js",
+    "main.css": "/iAMi/static/css/main.08c1f2e3.css",
+    "main.js": "/iAMi/static/js/main.7579b266.js",
     "static/js/453.714c72d3.chunk.js": "/iAMi/static/js/453.714c72d3.chunk.js",
     "static/media/iAMi.jpg": "/iAMi/static/media/iAMi.b60b8fe113cd78904218.jpg",
     "static/media/AH.jpg": "/iAMi/static/media/AH.ae056a329750f173ed1e.jpg",
@@ -15,12 +15,12 @@
     "static/media/bars-solid.svg": "/iAMi/static/media/bars-solid.cc422b9702b29002bb1a.svg",
     "static/media/phone.svg": "/iAMi/static/media/phone.3ac4d3ba95493ad22287.svg",
     "static/media/envelope.svg": "/iAMi/static/media/envelope.d150e42179798a558956.svg",
-    "main.e7745097.css.map": "/iAMi/static/css/main.e7745097.css.map",
-    "main.c6d56860.js.map": "/iAMi/static/js/main.c6d56860.js.map",
+    "main.08c1f2e3.css.map": "/iAMi/static/css/main.08c1f2e3.css.map",
+    "main.7579b266.js.map": "/iAMi/static/js/main.7579b266.js.map",
     "453.714c72d3.chunk.js.map": "/iAMi/static/js/453.714c72d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7745097.css",
-    "static/js/main.c6d56860.js"
+    "static/css/main.08c1f2e3.css",
+    "static/js/main.7579b266.js"
   ]
 }
