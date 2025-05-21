@@ -42,7 +42,7 @@ function Home() {
             {/* Resume Button */}
             <div className="mt-2">
   <a
-    href="../assets/JCline_Res_IT25.pdf"
+    href="https://github.com/jcline7774/iAMi/blob/main/JCline_Res_IT25.pdf"
     download
     className="bg-terracotta dark:bg-sea text-white dark:text-gray-800 font-bold py-2 px-6 rounded-lg hover:scale-105 hover:bg-[#e2725b] dark:hover:bg-[#3a99c3] transition-colors duration-300"
     style={{ width: '200px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
