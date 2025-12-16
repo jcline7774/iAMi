@@ -1,0 +1,374 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.experience {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 20vh; /* Add extra space for scroll buffer */
+  }
+  .mob-exp {
+    height: auto;
+    width: 100%;
+    overflow: visible;
+  }
+.exp-top {
+    flex-direction: column !important;
+    align-items: center;
+    }
+
+.left-exp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #d2e3d2;
+    }
+
+    .left-exp {
+      @apply rounded-xl p-4 bg-slate-200 text-black ;
+    }
+    
+    .dark .left-exp {
+      @apply bg-slate-700 text-gray-100;
+    }
+
+.right-exp {
+    width: 39vw;
+    height: 100%;
+}
+
+.exp-bottom {
+    height: 100%;
+    width: 100%;
+    padding-top: 3vh;
+}
+
+.exp-bottom-left {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between !important;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.small-blocks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.small-block-child {
+    width: 30%;
+    height: 8vh;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.e-details {
+    display: flex;
+    justify-content: left !important;
+    height: auto;
+    width: 100%;
+    min-height: 26vh;
+    position: center;
+    
+    flex-direction: column;
+    transition: all 0.3s ease;
+    
+}
+.c-details {
+    display: flex;
+    
+    justify-content: unset !important;
+    height: auto;
+    min-height: 18vh;
+    position: relative;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    margin-bottom: 3vh;
+    
+}
+/* Dropdown duties */
+.job-duties {
+    display: none;
+    margin-top: 1vh;
+    font-size: 0.9rem;
+    color: var(--text-secondary); 
+}
+
+.c-details:hover .job-duties {
+    display: block;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+.no-block {
+    width: 20%;
+    opacity: 0.2;
+    font-size: 3rem;
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex-c-details {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-top: 2%;
+
+}
+.ex-c-details:hover .job-duties {
+  display: block;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.center-container {
+    text-align: center;
+    width: 100%;
+    /* Adjust this width based on your layout */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding-top: 3px;
+}
+
+.centered-text {
+    display: inline-block;
+    white-space: normal;
+    /* Allows text to wrap to the next line */
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .experience {
+        padding-top: 1rem;
+    }
+
+    .neu-btn-1 {
+        width: 90vw !important;
+    }
+
+    .neu-btn-2 {
+        width: 100% !important;
+        height: 10vh !important;
+    }
+
+    .left-exp {
+        width: 90vw;
+        flex-direction: row !important;
+        display: flex;
+    }
+
+    .exp-top {
+        height: 40vh;
+    }
+
+    .chart--item {
+        width: 7vw;
+    }
+
+    .exp-bottom {
+        height: 30vh;
+        margin-top: 50vh;
+    }
+
+    .exp-bottom-left{
+        width: 90vw;
+        margin-bottom: 14vh;
+    }
+
+    .small-blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-details {
+        margin-top: 3vh;
+    }
+
+    .mob-exp{
+        overflow: scroll;
+        height: 90vh;
+    }
+}
+
+@keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-5%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .skill-bar-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .skill-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .skill-bar {
+    height: 8px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-fill {
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .skill-fill.visible {
+    width: var(--target-width);
+  }
+  .edu-content {
+    @apply rounded-xl p-4 bg-slate-200 text-black shadow-md;
+  }
+  
+  .dark .edu-content {
+    @apply bg-slate-700 text-gray-100;
+  }
+  
+  .frame2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-shadow:
+      -4px -4px 8px 0px #fff9,
+      -2px -2px 3px 0px #fff9,
+      7px 7px 20px 0px #0002,
+      4px 4px 5px 0px #0001,
+      inset 0px 0px 0px 0px #fff9,
+      inset 0px 0px 0px 0px #0001,
+      inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+    transition: box-shadow 0.6s cubic-bezier(.79, .21, .06, .81);
+     /* Or a soft neutral */
+    border-radius: 10px;
+  }
+  .frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-shadow:
+      -7px -7px 10px 0px #fff9,
+      -4px -4px 5px 0px #fff9,
+      7px 7px 20px 0px #0002,
+      4px 4px 5px 0px #0001,
+      inset 0px 0px 0px 0px #fff9,
+      inset 0px 0px 0px 0px #0001,
+      inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+    transition: box-shadow 0.6s cubic-bezier(.79, .21, .06, .81);
+     /* Or a soft neutral */
+    border-radius: 10px;
+  }
+
+  .frame2 {
+    @apply bg-slate-200 text-stone-800 transition-colors duration-300;
+  }
+  
+  .dark .frame2 {
+    @apply bg-slate-700 text-gray-100 transition-colors duration-300;
+  }
+  .card .box h2 {
+    position: absolute;
+    /* top: -10px; */
+    right: 0;
+    font-size: 8em;
+    
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    pointer-events: none;
+    top: -4vh;
+  }
+  
+  .card:hover h2 {
+    color: rgb(0 0 0 /50%);
+    /* bottom: -10px; */
+    transition: 1s ease-in-out;
+      -webkit-transition: 1s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      top: -20px;
+      right: 0;
+      font-size: 2em;
+      z-index: 222;
+     /* margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s; */
+  
+  }
+  
+ 
+  .job-duties {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .group:hover .job-duties {
+    max-height: 300px; /* or whatever max you expect */
+    opacity: 1;
+  }
+  
+  
+
+
+
+  
+  .card:hover .box{
+    /* height: auto; */
+      z-index: 11;
+      opacity: 1;
+      
+      /* transform: scale(1.05); */
+   
+     
+  }
+
+  @layer utilities {
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-5%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+  
+    .animate-slideDown {
+      animation: slideDown 0.3s ease forwards;
+    }
+  }
+  
+  

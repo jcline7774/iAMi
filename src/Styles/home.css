@@ -1,0 +1,187 @@
+.top-home-cont {
+  width: 100%;
+  min-height: 98vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.dfc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neu-btn-style{
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+}
+
+.neu-btn {
+  
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+  width: 8vw;
+  padding: 1vw;
+  border-radius: 0.5rem;
+}
+
+.neu-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .1), -4px -4px 10px rgba(255, 255, 255, 1);
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 350px;
+  position: relative;
+  box-shadow:
+    -6px -6px 10px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  transition: box-shadow 0.6s cubic-bezier(.79, .21, .06, .81);
+   /* Or a soft neutral */
+  border-radius: 10px;
+}
+
+.bottom-home-cont {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos {
+  height: 100%;
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ 
+.logos-wts {
+  background-image: url(../assets/logos/whatsapp.svg);
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logos-mail {
+  background-image: url(../assets/logos/envelope.svg);
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logos-linkedin {
+  background-image: url(../assets/logos/linkedin.svg);
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logos-call {
+  background-image: url(../assets/logos/phone.svg);
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logos-github {
+  background-image: url(../assets/logos/github.svg);
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:inherit;
+  color: #000;
+}
+
+.contact-frame {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-frame .neu-btn:hover{
+  border-radius: 50%;
+  border: solid #646a649e 1px;
+}
+
+@media screen and (max-width:768px) {
+
+  .top-home-cont {
+    width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+    /* align-items: flex-end; */
+    align-items: center;
+    /* font-size: 15px; */
+    position: relative;
+  }
+
+  .top-home-cont .neu-btn {
+    width: 50vw !important;
+    font-size: 15px;
+  }
+
+  .contact-frame .frame{
+    width: 90vw;
+    font-size: 15px;
+  }
+
+  .contact-frame .neu-btn{
+    width: 10vw!important;
+    height: 10vw!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .contact-frame .logos {
+    height: 5vw!important;
+    width: 5vw!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* color: red; */
+}
+
+.cv-download{
+  height: 6vh;
+  font-size: 15px;
+}
+}

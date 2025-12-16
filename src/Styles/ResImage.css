@@ -1,0 +1,13 @@
+.res-image{
+    margin:1rem 0;
+    border:2px solid #d2e3d2;
+    border-radius: 50%;
+    height: 10vw;
+    width: 10vw;
+    box-shadow: .4rem .4rem 1rem #ccc,
+    -.4rem -.4rem 1rem #fff;
+    background-image: url(../assets/images/iAMi.jpg);
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position:center ;
+}
