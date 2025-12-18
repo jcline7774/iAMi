@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import CurrentCompany from '../Component/CurrentCompany'
 import HomeDetails from '../Component/HomeDetails'
 import Skills from '../Component/Skills'
@@ -10,9 +9,6 @@ import ContactOptions from '../Component/ContactOptions'
 
 
 function Home() {
-  const navigate = useNavigate()
-
-  
   
   return (
     <div className="overflow-y-auto min-h-screen flex flex-col items-center justify-center bg-slate-400 text-[#2f2f2f] dark:bg-gray-900 dark:text-white transition-colors duration-300"><div className="f4 df  text-shadow">
