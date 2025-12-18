@@ -2,7 +2,7 @@ import React from 'react';
 import '../Styles/Skills.css'
 
 function Skills() {
-  const skills = ['JavaScript', 'ReactJS', 'Node.js', 'Express', 'MongoDB', 'Tailwind', 'Git', 'AWS', 'Azure', 'Python3', 'Jquery', 'JSON', 'HTML', 'CSS', 'MySQL', 'Jira', 'Tableau', 'Power BI'];
+  const skills = ['JavaScript', 'ReactJS', 'Node.js', 'Express', 'MongoDB', 'Tailwind', 'Git', 'AWS', 'Azure', 'Python3', 'Langchain', 'JSON', 'Pandas', 'HTML/CSS', 'MySQL', 'Jira', 'Tableau', 'Power BI'];
 
   return (
     <div className="flex flex-col items-center bg-slate-100 dark:bg-gray-700 p-6 rounded-lg shadow-md w-full md:w-1/2">

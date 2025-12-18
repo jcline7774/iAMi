@@ -3,6 +3,8 @@ import Card from '../Component/Card'
 import ECS from "../assets/images/ECS.jpg"
 import AH from "../assets/images/AH.jpg"
 import TB from "../assets/images/TB.jpg"
+import MAI from "../assets/images/MAI.jpg"
+import TDA from "../assets/images/TDA.png"
 import ResImage from '../Component/ResImage'
 import '../Styles/ResImage.css'
 
@@ -14,6 +16,66 @@ function Projects() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+   <Card
+          pno="06"
+          preview="In this project, I responded to a request for employment test to assess my
+          tech skills and see if I could produce a working todo list in a short time period.
+           The objective was to create a full stack application that allowed uses to manage tasks across multiple categories. The app had a backend API built with Node.js and Express.js, and a frontend UI built with React.js and Redux Toolkit. Both sidesused TypeScript.
+
+           Details:
+           User Stories:
+
+As a user, I want to be able to create a new todo item with a title, description, and due date.
+As a user, I want to assign a category to each todo item.
+As a user, I want to view all my todo items grouped by their categories.
+As a user, I want to mark a todo item as complete or incomplete.
+As a user, I want to edit the details of an existing todo item.
+As a user, I want to delete a todo item.
+As a user, I want to create new categories for organizing my todo items.
+As a user, I want to filter todo items by their completion status (all, active, completed).
+As a user, I want to sort todo items by due date or creation date.
+
+
+Technical Requirements
+
+Backend (Node.js, Express.js, TypeScript):
+Set up a Node.js project with Express.js and TypeScript.
+Implement RESTful API endpoints for CRUD operations on todo items and categories.
+You can use an in memory db for the purposes of this app or tie into a tranditional db.
+Implement proper error handling and input validation.
+Frontend (React.js, Redux w/ redux-toolkit, TypeScript):
+Set up a React project with TypeScript using vite
+Create components for displaying todo items, categories, and forms for adding/editing items.
+Implement Redux store and slices for managing application state.
+
+I added a dark mode toggle for better user experience and used CSS modules for styling the components...
+           
+           "
+          details={
+            <div>
+              <b>Tech Set:</b> Modern ReactJS Node.js with Express, TypeScript, Vite, Custom Hooks, Render.com<br />
+              <b>Goal:</b> Full CRUD operation interface with smart filtering, flexible sorting and a responsive design.<br/>
+              <br />
+              <a href="https://github.com/jcline7774/todo-app">
+                <img src={TDA} alt="TDA" className="w-1/2 mx-auto mt-1" />
+              </a>
+            </div>
+          }
+        />      
+         <Card
+          pno="05"
+          preview="In this project, we combined microservice architecture with free AI service to create a custom chatbot interface with working backend. Initially developed with a serverless architecture I used Docker and Deepseek with AWS Lightsail. As that was only free for 90 days, I made a repo with the container image and deployed it through render.com.  I was initially on a hunt for simple serverless hosting ideas using S3 with Lambda and then this idea came to me but only from the perspective of the architecture.  Now with all that's available with Grok and Deepseek, I think I will expand on this but with a more robust AI backend.  Stay tuned for some Python and Langchain work!"
+          details={
+            <div>
+              <b>Tech Set:</b> ReactJS, Node.js with Express, Docker, DeepSeeek AI API, AWS Lightsail, Render.com<br />
+              <b>Goal:</b> Custom AI chatbot interfaice with microservice architecture and containerized deployment.<br/>
+              <br />
+              <a href="https://github.com/jcline7774/my_ai">
+                <img src={MAI} alt="MAI" className="w-1/2 mx-auto mt-1" />
+              </a>
+            </div>
+          }
+        />
         <Card
           pno="04"
           preview="In this project, we create an online retail site using ReactJS, Node.js with Express, Stripe API and SQL Lite."

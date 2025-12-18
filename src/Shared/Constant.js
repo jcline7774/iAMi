@@ -81,10 +81,10 @@ export const Languages = [
         name:'Express.js'
     },
     {
-        name:'HTML'
+        name:'Pandas'
     },
     {
-        name:'CSS'
+        name:'HTML/CSS'
     }
 ]
 

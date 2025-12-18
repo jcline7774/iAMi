@@ -13,6 +13,7 @@ function Card({ pno, details, preview, isPersonal }) {
           <h2 className="absolute top-[-1rem] right-4 text-[8rem] text-black/10 group-hover:text-black/40 transition-all duration-700 pointer-events-none z-0">
             {pno}
           </h2>
+          
         </div>
       )}
     </>
