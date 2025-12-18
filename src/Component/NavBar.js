@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { themeAction } from '../store/theme-slice';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Buttons from './Buttons';
 import ProfileImage from './ProfileImage';
 import '../Styles/NavBar.css';
@@ -9,7 +9,7 @@ import '../Styles/NavBar.css';
 function NavBar(props) {
   const isDark = useSelector((state) => state.theme.isDarkMode);
   const dispatch = useDispatch();
-  const location = useLocation();
+
 
   const toggleTheme = () => {
     dispatch(themeAction.toggleDarkMode());
@@ -45,22 +45,11 @@ function NavBar(props) {
 
       {/* Navigation Options */}
       <div className="nav-options-cont mt-8 flex dark:text-sea flex-col gap-4 w-full text-center font-medium">
-      <div className='div-option dark:bg-slate-700 dark:text-sea' onClick={hideMenu}>
-
-<Link to='/'>Home</Link>
-</div>
-<div className='div-option dark:bg-slate-700 dark:text-sea' onClick={hideMenu}>
-<Link to='/education'>Education</Link>
-</div>
-<div className='div-option dark:bg-slate-700 dark:text-sea' onClick={hideMenu}>
-<Link to='/experience'> Experience</Link>
-</div>
-<div className='div-option dark:bg-slate-700 dark:text-sea' onClick={hideMenu}>
-<Link to='/projects'>Projects</Link>
-</div>
-<div className='div-option dark:bg-slate-700 dark:text-sea' onClick={hideMenu}>
-<Link to='/contact'>Contact</Link>
-</div>
+        {links.map((link) => (
+          <div key={link.to} className='div-option dark:bg-slate-700 dark:text-sea' onClick={hideMenu}>
+            <Link to={link.to}>{link.label}</Link>
+          </div>
+        ))}
       </div>
 
       {/* Toggle Theme Button */}
