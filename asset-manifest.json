@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/iAMi/static/css/main.90382bfb.css",
+    "main.js": "/iAMi/static/js/main.e734c1a5.js",
+    "static/js/453.714c72d3.chunk.js": "/iAMi/static/js/453.714c72d3.chunk.js",
+    "static/media/iAMi.jpg": "/iAMi/static/media/iAMi.b60b8fe113cd78904218.jpg",
+    "static/media/AH.jpg": "/iAMi/static/media/AH.ae056a329750f173ed1e.jpg",
+    "static/media/ECS.jpg": "/iAMi/static/media/ECS.721ca0e8be8713fc97b2.jpg",
+    "static/media/TB.jpg": "/iAMi/static/media/TB.9f75cb41686543c722fa.jpg",
+    "static/media/github.svg": "/iAMi/static/media/github.022db3ae71b7f7388d8a.svg",
+    "static/media/whatsapp.svg": "/iAMi/static/media/whatsapp.6d01f29fb9d9bb2a0560.svg",
+    "static/media/square-xmark.svg": "/iAMi/static/media/square-xmark.cb28c9b6c1b0778d3fa2.svg",
+    "index.html": "/iAMi/index.html",
+    "static/media/linkedin.svg": "/iAMi/static/media/linkedin.c81e49155aded38c0fbe.svg",
+    "static/media/bars-solid.svg": "/iAMi/static/media/bars-solid.cc422b9702b29002bb1a.svg",
+    "static/media/phone.svg": "/iAMi/static/media/phone.3ac4d3ba95493ad22287.svg",
+    "static/media/envelope.svg": "/iAMi/static/media/envelope.d150e42179798a558956.svg",
+    "main.90382bfb.css.map": "/iAMi/static/css/main.90382bfb.css.map",
+    "main.e734c1a5.js.map": "/iAMi/static/js/main.e734c1a5.js.map",
+    "453.714c72d3.chunk.js.map": "/iAMi/static/js/453.714c72d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90382bfb.css",
+    "static/js/main.e734c1a5.js"
+  ]
+}
